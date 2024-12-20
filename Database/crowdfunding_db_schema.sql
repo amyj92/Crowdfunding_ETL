@@ -1,6 +1,6 @@
 --------- CATEGORY TABLE ---------
 
-DROP TABLE category CASCADE;
+DROP TABLE if exists category CASCADE;
 
 CREATE TABLE category (
     category_id VARCHAR NOT NULL PRIMARY KEY,
@@ -13,7 +13,7 @@ FROM category;
 
 --------- SUBCATEGORY TABLE ---------
 
-DROP TABLE subcategory CASCADE;
+DROP TABLE if exists subcategory CASCADE;
 
 CREATE TABLE subcategory (
     subcategory_id VARCHAR NOT NULL PRIMARY KEY,
@@ -26,7 +26,7 @@ FROM subcategory;
 
 --------- CONTACTS TABLE ---------
 
-DROP TABLE contacts CASCADE;
+DROP TABLE if exists contacts CASCADE;
 
 CREATE TABLE contacts (
     contact_id int NOT NULL PRIMARY KEY,
@@ -41,7 +41,7 @@ FROM contacts;
 
 --------- CAMPAIGN TABLE ---------
 
-DROP TABLE campaign CASCADE;
+DROP TABLE if exists campaign CASCADE;
 
 CREATE TABLE campaign (
     cf_id int NOT NULL PRIMARY KEY,
